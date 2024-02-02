@@ -1,0 +1,210 @@
+.number-cell {
+  border-radius: 6px 0 0 6px;
+}
+.base-cell {
+  border-radius: 0 6px 6px 0;
+  color: #3dc6c1;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #191d28;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.5px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo,
+.contact {
+  flex-basis: 20%;
+  padding: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+.currency {
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.INR,
+.BTC,
+.BuyCrypto {
+  height: auto;
+  width: auto;
+  padding: 6px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  background-color: #2e3241;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+}
+
+.contact-button {
+  padding: 5px;
+  margin: 5px;
+  background-color: #3dc6c1;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: auto;
+  min-height: 40px;
+  min-width: 150px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  cursor: pointer;
+  border: none;
+}
+
+.time {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  color: #3dc6c1;
+  border: 3.5px solid #3dc6c1;
+  padding: 7px;
+  margin: 10px;
+  transition: border-color 1s ease, padding 1s ease;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: relative;
+  cursor: pointer;
+  width: 60px;
+  height: 34px;
+  background-color: #dcdfe2;
+  transition: background-color 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #3dc6c1;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #57617d;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.crypto-link {
+  color: white;
+  text-decoration: none;
+}
+.heading {
+  text-align: center;
+  height: auto;
+  font-size: 3.5rem;
+  color: white;
+  padding-top: 10px;
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  .logo {
+    display: block;
+  }
+  .contact {
+    justify-content: center;
+  }
+  .table tr {
+    font-size: 18px;
+    color: white;
+  }
+}
+@media (max-width: 800px) {
+  .table tr {
+    width: 800px;
+    overflow-x: scroll;
+  }
+}
+
+.main {
+  padding: 1rem;
+}
+.table-container {
+  margin: 0 auto;
+  padding: 1rem;
+}
+.table-row {
+  background-color: rgb(52, 53, 66);
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.table-head {
+  color: gray;
+  opacity: 0.5;
+  background-color: inherit;
+}
+
+.table th,
+.table td {
+  padding: 0.5rem;
+  text-align: center;
+  max-height: 50px;
+}
+
+footer {
+  border-top: 1.5px solid rgba(128, 128, 128, 0.5);
+  /* padding: 20px 5px 5px 5px; */
+  margin-top: 20px;
+  color: gray;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  padding: 5px;
+}
+footer a {
+  text-decoration: none;
+  color: gray;
+}
